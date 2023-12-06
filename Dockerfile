@@ -16,11 +16,11 @@ RUN pip install -r requirements.txt
 # RUN source venv/bin/activate
 
 # Exponha a porta em que o aplicativo Flask está sendo executado no contêiner
-EXPOSE 8080
+EXPOSE 5000
 
 
 # Configure o comando para iniciar o servidor Flask
-CMD ["flask", "run", "--host=0.0.0.0", "--port=8080"]
+CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
 
 
 #To RUN THE CONTAINER:
